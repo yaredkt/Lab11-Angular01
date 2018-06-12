@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CounterComponent implements OnInit {
 
+  counterValue = 5;
   constructor() { }
+
+  increase(){
+    this.counterValue = this.counterValue + 1;
+  }
+
+  decrease(){
+    this.counterValue = this.counterValue - 1;
+  }
 
   ngOnInit() {
   }
 
 }
+
